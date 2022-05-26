@@ -1,0 +1,8 @@
+#!name=Douban
+#!desc=增加资源链接
+
+[Script]
+Douban = type=http-response,pattern=^https://m.douban.com/movie/subject/.+,requires-body=1,max-size=0,timeout=30,script-path= https://raw.githubusercontent.com/Decadentidea/ios_rule_script/master/script/douban/douban.js
+
+[MITM]
+hostname = %APPEND% m.douban.com
