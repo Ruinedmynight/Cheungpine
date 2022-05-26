@@ -1,0 +1,8 @@
+#!name=rrtv
+#!desc=人人视频会员
+
+[Script]
+rrtv = type=http-response,pattern= https://api.rr.tv/user/profile,requires-body=1,max-size=0,timeout=30,script-path= https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/rrtv.js
+
+[MITM]
+hostname = %APPEND% api.rr.tv
