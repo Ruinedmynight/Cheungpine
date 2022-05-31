@@ -2,7 +2,7 @@
 #!desc=去广告
 
 [Script]
-Douban = type=http-response,pattern= ^https?:\/\/oauth\.secure\.pixiv\.net\/(auth\/token),requires-body=1,max-size=0,timeout=30,script-path= https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/pixivpro.js
+pixiv = type=http-response,pattern= ^https?:\/\/oauth\.secure\.pixiv\.net\/(auth\/token),requires-body=1,max-size=0,timeout=30,script-path= https://github.com/ddgksf2013/Cuttlefish/raw/master/Crack/pixivpro.js
 
 [MITM]
 hostname = %APPEND% oauth.secure.pixiv.net
