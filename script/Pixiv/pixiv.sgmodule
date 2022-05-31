@@ -1,6 +1,0 @@
-#!name=pixiv
-#!desc=功能解锁
-[Script]
-
-# > 023 樊登读书 （2020-10-26） by ddgksf2013
-樊登读书 = type=http-response,pattern=https://api.dushu.io/Album/Info,requires-body=1,script-path=https://raw.githubusercontent.com/28413761/QX/main/jiesuo/fdds.js,script-update-interval=0,max-size=0
