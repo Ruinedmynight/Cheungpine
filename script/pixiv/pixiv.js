@@ -16,7 +16,11 @@
 [rewrite_local]
 
 # ～ Pixiv去除广告（2022-05-19）@ddgksf2013
-^https?:\/\/oauth\.secure\.pixiv\.net\/(auth\/token) url script-response-body https://raw.githubusercontent.com/Cheungpine/Cheungpine/master/script/pixiv/pixiv.js
+^https?:\/\/oauth\.secure\.pixiv\.net\/(auth\/token) url script-response-body https://github.com/Cheungpine/Cheungpine/raw/master/script/pixiv/pixiv.js
+
+[MITM]
+hostname = %APPEND% oauth.secure.pixiv.net
+
 
 [mitm] 
 
